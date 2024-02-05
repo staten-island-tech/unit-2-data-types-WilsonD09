@@ -1,5 +1,5 @@
-day_of_week = input("what day is it? ")
-if day_of_week == "Friday":
-    print("correct")
+x = 3
+if x : [3]
+    print('odd')
 else:
-    print("incorrect")
+    print('even')
