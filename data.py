@@ -17,8 +17,29 @@ elif Service == ('good'):
 elif Service == ('great'):
     print(float(x*1.25)) """
 
+""" Challenge 3
+def allfactors(n):
+    factors = []
+    for i in range(1,n+1):
+        if n%i == 0:
+            factors.append(i)
+    return factors
 
-def factors(number):
-    factorslist = []
-    for i in range(1,number+1):
-        
+number = int(input("Please enter a number: "))
+listfactors = allfactors(number)
+print(listfactors) """
+
+def gcf(numX,numY):
+    if numX > numY:
+        x = numY
+    else:
+        x = numX
+    cf = []
+    for i in range(1,x+1):
+        if (numX,numY)%i == 0:
+            cf.append(i)
+    return cf
+numX = int(input("Please enter the first number: "))
+numY = int(input("Please enter the second number: "))
+thegcf = gcf()
+print(max(thegcf))
