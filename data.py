@@ -29,17 +29,16 @@ number = int(input("Please enter a number: "))
 listfactors = allfactors(number)
 print(listfactors) """
 
+""" Challenge 4
+numX = int(input("Please enter the first number: "))
+numY = int(input("Please enter the second number: "))
 def gcf(numX,numY):
     if numX > numY:
         x = numY
     else:
         x = numX
-    cf = []
     for i in range(1,x+1):
-        if (numX,numY)%i == 0:
-            cf.append(i)
-    return cf
-numX = int(input("Please enter the first number: "))
-numY = int(input("Please enter the second number: "))
-thegcf = gcf()
-print(max(thegcf))
+        if numX%i == 0 and numY%i == 0:
+            hcf = i
+    return hcf
+print(gcf(numX,numY)) """
