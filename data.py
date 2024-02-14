@@ -37,7 +37,7 @@ def gcf(numX,numY):
         x = numY
     else:
         x = numX
-    for i in range(1,x+1):
+    for i in range(1,x):
         if numX%i == 0 and numY%i == 0:
             hcf = i
     return hcf
